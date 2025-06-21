@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>おすすめ映画サイト</title>
+  <title>ヨウガスキー</title>
   <style>
     body {
       margin: 0;
@@ -15,8 +15,16 @@
       background-color: #1f1f1f;
       padding: 20px;
       text-align: center;
-      font-size: 2em;
+    }
+    header h1 {
+      font-size: 2.2em;
+      margin: 0;
       color: #e50914;
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 1em;
+      color: #cccccc;
     }
     .movies {
       display: grid;
@@ -43,14 +51,21 @@
       margin: 0;
     }
     @media (max-width: 600px) {
-      header {
+      header h1 {
         font-size: 1.5em;
+      }
+      header p {
+        font-size: 0.9em;
       }
     }
   </style>
 </head>
 <body>
-  <header>おすすめ映画</header>
+  <header>
+    <h1>ヨウガスキー</h1>
+    <p>80年代〜2000年代の映画記録帳</p>
+    <p>心に残る、あの洋画たちをもう一度</p>
+  </header>
   <section class="movies">
     <div class="movie-card">
       <img src="https://via.placeholder.com/300x450" alt="映画ポスター">
@@ -63,6 +78,11 @@
     <div class="movie-card">
       <img src="https://via.placeholder.com/300x450" alt="映画ポスター">
       <h3>映画タイトル３</h3>
+    </div>
+  </section>
+</body>
+</html>
+
     </div>
   </section>
 </body>
