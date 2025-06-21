@@ -11,79 +11,101 @@
       background-color: #121212;
       color: white;
     }
+
     header {
       background-color: #1f1f1f;
-      padding: 20px;
+      padding: 1rem;
       text-align: center;
     }
+
     header h1 {
-      font-size: 2.2em;
       margin: 0;
-      color: #e50914;
+      font-size: 2rem;
     }
+
     header p {
-      margin: 5px 0;
-      font-size: 1em;
-      color: #cccccc;
+      margin: 0.5rem 0 0;
+      font-size: 1rem;
+      color: #bbbbbb;
     }
-    .movies {
+
+    main {
+      padding: 2rem;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
     }
+
     .movie-card {
       background-color: #1e1e1e;
-      border-radius: 10px;
+      border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-      transition: transform 0.2s;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
     }
+
     .movie-card:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
     }
+
     .movie-card img {
       width: 100%;
       height: auto;
     }
-    .movie-card h3 {
-      padding: 10px;
-      margin: 0;
+
+    .movie-card-content {
+      padding: 1rem;
     }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5em;
-      }
-      header p {
-        font-size: 0.9em;
-      }
+
+    .movie-card-content h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .movie-card-content p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #dddddd;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>ヨウガスキー</h1>
-    <p>80年代〜2000年代の映画記録帳</p>
-    <p>心に残る、あの洋画たちをもう一度</p>
+    <p>80年代〜2000年代の映画記録帳<br>心に残る、あの洋画たちをもう一度</p>
   </header>
-  <section class="movies">
+  <main>
     <div class="movie-card">
-      <img src="https://via.placeholder.com/300x450" alt="映画ポスター">
-      <h3>映画タイトル１</h3>
+      <img src="the rock.jpg" alt="The Rock">
+      <div class="movie-card-content">
+        <h2>🎥 『ザ・ロック』－－IMDb評価 7.4／10！迫力と信念が交錯する名作アクション</h2>
+        <p>1996年公開のマイケル・ベイ監督×ニコラス・ケイジ＆ショーン・コネリー共演作『ザ・ロック』。IMDbでは7.4／10（約27万人の投票）という高評価を獲得しています。</p>
+        <p>サンフランシスコ湾に浮かぶ実在の刑務所島・アルカトラズを舞台に、政府に要求を突きつける元海兵隊士の反乱。そこに立ち向かうのは、化学兵器の専門家と、かつてアルカトラズから脱獄した伝説の男！</p>
+        <p>この記事では『ザ・ロック』の魅力や見どころをSEO視点で解説します。</p>
+        <hr>
+        <h3>【基本情報とストーリー概要】</h3>
+        <ul>
+          <li>公開年：1996年</li>
+          <li>監督：マイケル・ベイ</li>
+          <li>出演：ニコラス・ケイジ / ショーン・コネリー / エド・ハリス</li>
+          <li>舞台は実在の刑務所島・アルカトラズ</li>
+          <li>反乱を止めるため集められたのは、化学兵器専門家と脱獄経験を持つ伝説の男！</li>
+        </ul>
+        <hr>
+        <h3>【IMDb評価は7.4！「信念を持つ敵」の深み】</h3>
+        <p>一方的な悪ではなく、政府に要求を突きつける元海兵隊士ハメル准将の胸の内にある正義感が物語を深みあるものに。ただのアクションでは終わらない、そんな重厚さがIMDb評価7.4の根拠です。</p>
+        <hr>
+        <h3>【バディの魅力：スタンリー vs. メイソン】</h3>
+        <p>ニコラス・ケイジ演じる化学オタクと、ショーン・コネリー演じる元特殊部隊。性格の全く違う二人だからこそのケミストリーが光る。笑いと緊張感が共存した、感情を揺さぶるバディモノに注目です。</p>
+        <hr>
+        <h3>【BGMで倍増する感情の高揚】</h3>
+        <p>ハンス・ジマーらが手がけたサウンドトラックが、各シーンの雰囲気を最大限に引き立てます。アクションのテンポを急かす矢のような音楽が、覚悟と想いを高めます。</p>
+        <hr>
+        <h3>【まとめ：今こそ見るべき『ザ・ロック』】</h3>
+        <p>アクションの見応えもさることながら、そこに信念や正義の問題を投げかける深みがある。それが『ザ・ロック』の魅力です。</p>
+        <p>IMDbの高評価も、多くの観客がその価値を認めた証。未見の方はぜひ、すでに観た人もこの機会に再鑑賞してみてください。</p>
+      </div>
     </div>
-    <div class="movie-card">
-      <img src="https://via.placeholder.com/300x450" alt="映画ポスター">
-      <h3>映画タイトル２</h3>
-    </div>
-    <div class="movie-card">
-      <img src="https://via.placeholder.com/300x450" alt="映画ポスター">
-      <h3>映画タイトル３</h3>
-    </div>
-  </section>
-</body>
-</html>
-
-    </div>
-  </section>
+  </main>
 </body>
 </html>
